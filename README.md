@@ -1,4 +1,4 @@
-# 🎮 Pac-Rupt: The 8-Bit Blockchain Arcade
+# 🎮 Pac-Rupt: Win or dont let others Win
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)  
 [![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://maze-plum.vercel.app/)
@@ -11,6 +11,10 @@
 ## 🕹️ Live Demo
 
 🔗 *Play it now:* [Pac-Rupt Live on Vercel](https://maze-plum.vercel.app/)
+
+*MOVE modules:* maze_game and room_registry. 
+
+*Contract Address* : 0x610b5f5dd4e53876a000fc05432f119bd7763abdb62efc034393ee63055de1f9
 
 ---
 
@@ -117,8 +121,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## 📣 Connect & Play
 
 🎮 Play the game: [Pac-Rupt Live on Vercel](https://maze-plum.vercel.app/)
-💬 Contact: \[Your Name / Team Contact Email]
-🛠️ Built with ❤️ by the Pac-Rupt Team.
+💬 Contact: \[SOHAM DEY / soham4707@gmail.com]
+🛠️ Built with ❤️ by team Code Crusaders 2025.
 
 
 
