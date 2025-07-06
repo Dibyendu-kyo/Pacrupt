@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 import { ArrowLeft, Users, Heart, Zap, Copy, Share2, Check } from "lucide-react"
-import { db } from "@/lib/firebase"
+import { db } from "@/lib/firebase-client"
 import { doc, setDoc, collection, query, orderBy, limit, getDocs, increment, getDoc } from "firebase/firestore"
 import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut } from 'firebase/auth'
 

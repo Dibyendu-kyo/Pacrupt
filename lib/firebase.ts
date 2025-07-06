@@ -1,7 +1,6 @@
 import { initializeApp, getApps } from "firebase/app";
 import { getFirestore, Firestore } from "firebase/firestore";
-// Remove analytics import from top level to prevent server-side issues
-// import { getAnalytics } from "firebase/analytics";
+// Remove analytics completely from server-side configuration
 
 // Debug environment variables
 console.log("Firebase config check:");
@@ -25,7 +24,6 @@ const firebaseConfig = {
 
 let app;
 let db: Firestore;
-let analytics;
 
 try {
   app = !getApps().length ? initializeApp(firebaseConfig) : getApps()[0];
@@ -33,16 +31,9 @@ try {
   
   db = getFirestore(app);
   console.log("Firestore database initialized successfully");
-
-  // Only initialize analytics in the browser
-  if (typeof window !== "undefined") {
-    const { getAnalytics } = require("firebase/analytics");
-    analytics = getAnalytics(app);
-    console.log("Firebase Analytics initialized successfully");
-  }
 } catch (error) {
   console.error("Firebase initialization error:", error);
   throw error;
 }
 
-export { app, db, analytics }; 
+export { app, db }; 
